@@ -1,0 +1,12 @@
+$(document).ready(function() {
+  
+  $(".sub").click(function() {
+    var text = $("#text").val();
+     $("#new").text(text);
+     $("#new").animate({
+      marginLeft: "-=3700px"
+     },"slow");
+  });
+  
+  $(".")
+});
