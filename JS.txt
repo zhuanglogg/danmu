@@ -1,12 +1,17 @@
 $(document).ready(function() {
-  
+  //发射功能
   $(".sub").click(function() {
-    var text = $("#text").val();
-     $("#new").text(text);
+     var text = $("#text").val();
+     $("<p>text</p>").appendTo("#dm_show");
+    // $("#new").append(text);
+    // $("#new").css({})
      $("#new").animate({
       marginLeft: "-=3700px"
      },"slow");
   });
-  
-  $(".")
+
+  //清屏
+  $(".del").click(function(){
+     $("#new").remove();
+  });
 });
